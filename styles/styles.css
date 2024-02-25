@@ -1,0 +1,263 @@
+#backgroundVideo {
+    width: 100%;
+    top: 35px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#content {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#buttons{
+    text-align: center;
+    color: white;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#mainTitle {
+    font-size: 4em;
+    font-family: ModernWarfare, serif;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    margin: 0;
+}
+
+#belowTitle{
+    font-family: ModernWarfare, serif;
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s forwards;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.option {
+    position: relative;
+}
+
+.option a:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 10px white;
+}
+
+.option a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.option:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100% ;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    padding: 10px;
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.option:hover .submenu,
+.submenu:hover {
+    display: block;
+}
+
+.submenu {
+    z-index: 999;
+}
+.option a:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#purchaseButton button {
+    background-color: black;
+    background-image: radial-gradient(circle, #1e90ff 1%, transparent 1%);
+    background-size: 10px 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#purchaseButton button:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 0 10px #1e90ff;
+}
+
+#bodyBackground{
+    background-color: black;
+    margin: 0;
+    font-family: "DeliciousRegular", serif;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+.container .box {
+    position: relative;
+    width: 400px;
+    height: 575px;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+
+.container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #1a1b1e,#000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+.container .box:hover .imgBx:before {
+    opacity: 1;
+}
+.container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.container .box .content h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+.container .box:hover .content h2 {
+    transform: translateY(0px);
+}
+.container .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+}
+.container .box:hover .content p {
+    transform: translateY(0px);
+}
+
+#platform{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: xxx-large;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.platformIcon {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+}
+
+.platformIcon img {
+    width: 240px;
+    height: 240px;
+    border: 2px solid white;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.platformIcon:hover img {
+    transform: scale(1.1);
+}
+
+.platformText {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
