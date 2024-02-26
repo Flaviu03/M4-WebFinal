@@ -276,7 +276,7 @@ table {
 .bio-container {
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 800px; /* Adjust this value as needed */
 }
 
 .bio-text {
@@ -293,7 +293,7 @@ aside {
     background-color: black;
     color: white;
     padding: 10px;
-    width: 30%;
+    width: 30%; /* Adjust the width of the aside as needed */
     box-sizing: border-box;
     float: left;
 }
