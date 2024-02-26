@@ -248,6 +248,7 @@ table {
     display: block;
     margin: 0 auto;
     transition: all 0.3s ease;
+    padding: 5px;
 }
 
 .platformIcon:hover img {
@@ -261,3 +262,43 @@ table {
     font-size: x-large;
     color: white;
 }
+
+.biography {
+    background-color: black;
+    margin: 0;
+}
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Adjust this value as needed */
+}
+
+.bio-text {
+    flex: 1;
+    margin-right: 20px;
+    color: white;
+}
+
+.bio-image {
+    margin-left: 20px;
+}
+
+aside {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 30%; /* Adjust the width of the aside as needed */
+    box-sizing: border-box;
+    float: left;
+}
+
+.aside-section {
+    margin-bottom: 15px;
+}
+
