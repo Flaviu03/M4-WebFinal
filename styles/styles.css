@@ -358,3 +358,12 @@ table {
 .aside-section {
     margin-bottom: 20px;
 }
+
+footer{
+    padding-top: 2%;
+}
+
+footer h4{
+    text-align: center;
+    color: white;
+}
