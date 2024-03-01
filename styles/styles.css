@@ -71,7 +71,6 @@
 
 .option a:hover {
     color: white;
-    background-color: black;
     transform: scale(1.1);
     transition: transform 0.3s ease;
     text-shadow: 0 0 10px white;
