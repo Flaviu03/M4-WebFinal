@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #backgroundVideo {
     width: 100%;
     top: 35px;
@@ -338,20 +342,28 @@ table {
 .aside h3 {
     margin-top: 0;
     color: black;
+    display: inline;
 }
 
 .aside ul {
     list-style-type: none;
     padding: 0;
+    display: inline;
 }
 
 .aside ul li {
     margin-bottom: 10px;
+    display: inline;
 }
 
 .aside ul li a {
     text-decoration: none;
     color: #333;
+    transition: font-size 0.2s ease;
+}
+
+.aside ul li a:hover {
+    font-size: 110%;
 }
 
 .aside-section {
@@ -365,4 +377,42 @@ footer{
 footer h4{
     text-align: center;
     color: white;
+}
+
+#removeLink{
+    text-decoration: none;
+    color: white;
+}
+
+.subscription-form{
+    color: black;
+}
+
+.subscription-form label{
+    font-weight: bold;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"],
+.subscription-form input[type="date"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.subscription-form input[type="submit"] {
+    background-color: #4c68af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form input[type="submit"]:hover {
+    background-color: #4551a0;
 }
