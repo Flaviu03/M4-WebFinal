@@ -2,6 +2,34 @@ html {
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 600px) {
+    #backgroundVideo {
+        display: none;
+    }
+
+    #mainTitle {
+        display: none;
+    }
+
+    #belowTitle{
+        display: none;
+    }
+
+    #purchaseButton{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #content {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
 #backgroundVideo {
     width: 100%;
     top: 35px;
@@ -43,6 +71,26 @@ html {
     animation: fadeIn 2s forwards;
 }
 
+#purchaseButton button {
+    background-color: black;
+    background-image: radial-gradient(circle, #1e90ff 1%, transparent 1%);
+    background-size: 10px 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#purchaseButton button:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 0 10px #1e90ff;
+}
+
 #options {
     display: flex;
     justify-content: center;
@@ -50,6 +98,16 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 0;
     position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.optionsOther {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
     width: 100%;
     z-index: 1000;
 }
@@ -123,25 +181,7 @@ html {
     transition: transform 0.3s ease;
 }
 
-#purchaseButton button {
-    background-color: black;
-    background-image: radial-gradient(circle, #1e90ff 1%, transparent 1%);
-    background-size: 10px 10px;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
 
-#purchaseButton button:hover {
-    background-color: #1e90ff;
-    box-shadow: 0 0 10px #1e90ff;
-}
 
 #bodyBackground{
     background-color: black;
@@ -370,13 +410,39 @@ table {
     margin-bottom: 20px;
 }
 
-footer{
-    padding-top: 2%;
+footer {
+    background-color: rgba(51, 51, 51, 0.46);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 2%;
 }
 
-footer h4{
-    text-align: center;
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer h4 {
     color: white;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 16px;
+    transition: font-size 0.2s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    font-size: 18px;
+}
+
+footer p {
+    color: white;
+    margin-top: 10px;
 }
 
 #removeLink{
@@ -415,4 +481,104 @@ footer h4{
 
 .subscription-form input[type="submit"]:hover {
     background-color: #4551a0;
+}
+
+#bodyBeta{
+    background-color: black;
+    margin: 0;
+    font-family: "DeliciousRegular", serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form-container h2, p{
+    flex: 1;
+    color: white;
+}
+
+.table-container {
+    flex: 1;
+}
+
+.beta-signup {
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.beta-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.beta-signup .form-group {
+    margin-bottom: 15px;
+}
+
+.beta-signup label {
+    margin-bottom: 5px;
+}
+
+.beta-signup input[type="text"],
+.beta-signup input[type="email"],
+.beta-signup textarea,
+.beta-signup select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.beta-signup button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.beta-signup button:hover {
+    background-color: #0056b3;
+}
+
+.benefits-table {
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.benefits-table th,
+.benefits-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.benefits-table th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}
+
+.benefits-table td {
+    background-color: #f2f2f2;
+    color: #333;
 }

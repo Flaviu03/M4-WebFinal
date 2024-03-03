@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Warfare</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body id="bodyBeta">
+<nav class="optionsOther">
+    <div class="home-option">
+        <a href="../index.html">
+            <img src="../icons/game.png" alt="Modern Warfare">
+        </a>
+    </div>
+    <div class="options-container">
+        <div class="option">
+            <a>Characters</a>
+            <div class="submenu">
+                <a href="../sites/ghost.html">Ghost</a>
+                <a href="../sites/price.html">Price</a>
+                <a href="../sites/soap.html">Soap</a>
+                <a href="../sites/gaz.html">Gaz</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<section id="beta-signup-section">
+    <div class="container">
+        <div class="form-container">
+            <h2>Want to become a part of the Call of Duty team?</h2>
+            <p>To sign up for beta:</p>
+            <form class="beta-signup" action="mostra_variables.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="graphic design">Graphic design</option>
+                        <option value="gameplay">Gameplay</option>
+                        <option value="armory">Armory</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests:</label><br>
+                    <input type="checkbox" id="interest1" name="interests[]" value="multiplayer">
+                    <label for="interest1">Multiplayer</label><br>
+                    <input type="checkbox" id="interest2" name="interests[]" value="singleplayer">
+                    <label for="interest2">Singleplayer</label><br>
+                    <input type="checkbox" id="interest3" name="interests[]" value="competitive">
+                    <label for="interest3">Competitive</label><br>
+                </div>
+
+                <div class="form-group">
+                    <label>Platform:</label><br>
+                    <input type="radio" id="platform1" name="platform" value="pc">
+                    <label for="platform1">PC</label><br>
+                    <input type="radio" id="platform2" name="platform" value="console">
+                    <label for="platform2">Console</label><br>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <section id="benefits-section">
+                <h2>Benefits of becoming a beta member:</h2>
+                <table class="benefits-table">
+                    <tr>
+                        <th>Benefit</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Early Access</td>
+                        <td>Get early access to upcoming features and content.</td>
+                    </tr>
+                    <tr>
+                        <td>Feedback</td>
+                        <td>Provide feedback to help improve the game before release.</td>
+                    </tr>
+                    <tr>
+                        <td>Exclusive Content</td>
+                        <td>Access exclusive in-game content only available to beta members.</td>
+                    </tr>
+                    <tr>
+                        <td>Community Events</td>
+                        <td>Participate in special community events and tournaments.</td>
+                    </tr>
+                    <tr>
+                        <td>Direct Communication</td>
+                        <td>Engage directly with developers and provide direct feedback.</td>
+                    </tr>
+                    <tr>
+                        <td>Priority Support</td>
+                        <td>Receive priority support for any issues encountered during beta testing.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <h4>Connect with me:</h4>
+        <div class="social-links">
+            <a href="https://twitter.com/fL0309" target="_blank">Twitter</a>
+            <a href="https://steamcommunity.com/id/hexediting/" target="_blank">Steam</a>
+        </div>
+        <p>&copy; 2024 Flaviu Cristian. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
